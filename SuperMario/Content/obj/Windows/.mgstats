@@ -1,0 +1,7 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/admin/source/repos/SuperMario/SuperMario/Content/colision.png","C:/Users/admin/source/repos/SuperMario/SuperMario/Content/bin/Windows/colision.xnb","TextureProcessor","Texture2DContent",141,9301,0,1280241
+"C:/Users/admin/source/repos/SuperMario/SuperMario/Content/Enemys.png","C:/Users/admin/source/repos/SuperMario/SuperMario/Content/bin/Windows/Enemys.xnb","TextureProcessor","Texture2DContent",33786,886037,0,0456913
+"C:/Users/admin/source/repos/SuperMario/SuperMario/Content/Icon.ico","C:/Users/admin/source/repos/SuperMario/SuperMario/Content/bin/Windows/Icon.xnb","TextureProcessor","Texture2DContent",147541,262229,0,0111189
+"C:/Users/admin/source/repos/SuperMario/SuperMario/Content/Mario.png","C:/Users/admin/source/repos/SuperMario/SuperMario/Content/bin/Windows/Mario.xnb","TextureProcessor","Texture2DContent",37977,1018581,0,0207983
+"C:/Users/admin/source/repos/SuperMario/SuperMario/Content/pipe.png","C:/Users/admin/source/repos/SuperMario/SuperMario/Content/bin/Windows/pipe.xnb","TextureProcessor","Texture2DContent",4159,70741,0,0036672
+"C:/Users/admin/source/repos/SuperMario/SuperMario/Content/platform.jpg","C:/Users/admin/source/repos/SuperMario/SuperMario/Content/bin/Windows/platform.xnb","TextureProcessor","Texture2DContent",1524,3733,0,0014978
