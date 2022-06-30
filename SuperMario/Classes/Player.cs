@@ -9,6 +9,7 @@ using System.Diagnostics;
 
 namespace SuperMario.Classes
 {
+    delegate void MyMoveMap(int movepos);
     enum Vzglad
     {
         Pravo, Levo
@@ -37,6 +38,7 @@ namespace SuperMario.Classes
         private bool freecam;
         private int up;
         private int interval;
+        private MyMoveMap freecamMove;
         public bool IsAlive { get; set; }
         private List<FireBall> balls = new List<FireBall>();
         public List<FireBall> Balls
@@ -54,8 +56,9 @@ namespace SuperMario.Classes
             get => colision;
             set => colision = value;
         }
-        public Player(Vector2 pos)
+        public Player(Vector2 pos,MyMoveMap mmm)
         {
+            freecamMove = mmm;
             position = pos;
             texture = null;
             speed = 4;
@@ -70,7 +73,23 @@ namespace SuperMario.Classes
             colision.ColisionBoxY = new Rectangle((int)position.X, (int)position.Y, 48, 60);
             IsAlive = true;
         }
-
+        public Player(Vector2 pos)
+        {
+            
+            position = pos;
+            texture = null;
+            speed = 4;
+            vzglad = Vzglad.Pravo;
+            size = new Vector2(16, 16);
+            boundingBox = new Rectangle((int)pos.X, (int)pos.Y, (int)size.X, (int)size.Y);
+            statusx = StatusX.Stay;
+            freecam = false;
+            interval = 0;
+            colision = new Colision();
+            colision.ColisionBoxX = new Rectangle((int)position.X, (int)position.Y, 60, 48);
+            colision.ColisionBoxY = new Rectangle((int)position.X, (int)position.Y, 48, 60);
+            IsAlive = true;
+        }
         public void LoadContent(ContentManager content)
         {
             texture = content.Load<Texture2D>("Mario");
@@ -111,7 +130,10 @@ namespace SuperMario.Classes
         public void Update(bool top,bool right, bool left, bool down)
         {
             Debug.WriteLine(IsAlive);
-            
+            if (position.X>=1920/2-24)
+            {
+                freecam = true;
+            }
             KeyboardState keyboardState = Keyboard.GetState();
             colision.ColisionBoxX = new Rectangle((int)position.X-32, (int)position.Y-24, 64, 48);
             colision.ColisionBoxY = new Rectangle((int)position.X-24, (int)position.Y-32, 48, 64);
@@ -160,10 +182,19 @@ namespace SuperMario.Classes
 
             if (!right && keyboardState.IsKeyDown(Keys.D))
             {
+                if (!freecam)
+                {
+                    position.X += speed;
+                    curF++;
+                    vzglad = Vzglad.Pravo;
+                }
+                else
+                {
+                    freecamMove(-speed);
+                }
                 statusx = StatusX.Go;
-                position.X += speed;
-                curF++;
-                vzglad = Vzglad.Pravo;
+
+                
             }
             else if (!left && keyboardState.IsKeyDown(Keys.A))
             {
@@ -181,7 +212,7 @@ namespace SuperMario.Classes
             {
                 curF = 0;
             }
-            if (keyboardState.IsKeyDown(Keys.Space) && interval <= 0 )
+            if (keyboardState.IsKeyDown(Keys.Space) && interval <= 0)
             {
                 interval = 200;
                 SpawFireBall();
@@ -190,6 +221,7 @@ namespace SuperMario.Classes
             {
                 interval--;
             }
+
         }
         private void SpawFireBall()
         {

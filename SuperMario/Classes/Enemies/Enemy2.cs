@@ -54,7 +54,7 @@ namespace SuperMario.Classes.Enemies
        {
             if (speed==24)
             {
-                colision.ColisionBoxX = new Rectangle((int)position.X - 52, (int)position.Y - 24, 104, 48);
+                colision.ColisionBoxX = new Rectangle((int)position.X - 60, (int)position.Y - 24, 108, 48);
                 colision.ColisionBoxY = new Rectangle((int)position.X - 24, (int)position.Y - 32, 48, 60);
             }
             else
