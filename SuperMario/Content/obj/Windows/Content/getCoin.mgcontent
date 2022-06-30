@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>D:/ANNA/USB/monogame/SuperMario — копия/SuperMario/Content/getCoin.mp3</SourceFile>
+  <SourceTime>2022-06-29T17:33:20.1877225+03:00</SourceTime>
+  <DestFile>D:/ANNA/USB/monogame/SuperMario — копия/SuperMario/Content/bin/Windows/Content/getCoin.xnb</DestFile>
+  <DestTime>2022-06-30T14:49:03.5626015+03:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2020-08-10T16:17:54+03:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54+03:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>D:/ANNA/USB/monogame/SuperMario — копия/SuperMario/Content/bin/Windows/Content/getCoin.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

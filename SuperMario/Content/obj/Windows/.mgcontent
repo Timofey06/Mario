@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/star.jpg</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/enemyDying.wav</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/jump.mp3</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/getCoin.mp3</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/baseMusik.mp3</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/pipe.png</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/greenMashrum.jpg</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/Classic_Mushroom.png</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/pl.jpg</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/bonus.png</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/money.png</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/File.spritefont</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/square.png</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/Mario.png</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/Mario.jfif</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/player.jfif</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/pipe.jpg</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/platform.jpg</File>
+    <File>D:/ANNA/USB/monogame/SuperMario/SuperMario/Content/platform.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
